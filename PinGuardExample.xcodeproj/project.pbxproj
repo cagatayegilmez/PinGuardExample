@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A1B2C3012F450001003D4C4E /* PinGuard in Frameworks */ = {isa = PBXBuildFile; productRef = A1B2C3022F450001003D4C4E /* PinGuard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5257635B2F4485F5003D4C4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,6 +52,16 @@
 			path = PinGuardExample;
 			sourceTree = "<group>";
 		};
+		A1B2C3032F450001003D4C4E /* PinGuardExampleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PinGuardExampleTests;
+			sourceTree = "<group>";
+		};
+		A1B2C3042F450001003D4C4E /* PinGuardExampleUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PinGuardExampleUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1B2C3012F450001003D4C4E /* PinGuard in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				525763462F4485F4003D4C4E /* PinGuardExample */,
+				A1B2C3032F450001003D4C4E /* PinGuardExampleTests */,
+				A1B2C3042F450001003D4C4E /* PinGuardExampleUITests */,
 				525763452F4485F4003D4C4E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,6 +130,7 @@
 			);
 			name = PinGuardExample;
 			packageProductDependencies = (
+				A1B2C3022F450001003D4C4E /* PinGuard */,
 			);
 			productName = PinGuardExample;
 			productReference = 525763442F4485F4003D4C4E /* PinGuardExample.app */;
@@ -130,6 +148,9 @@
 			);
 			dependencies = (
 				5257635C2F4485F5003D4C4E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1B2C3032F450001003D4C4E /* PinGuardExampleTests */,
 			);
 			name = PinGuardExampleTests;
 			packageProductDependencies = (
@@ -150,6 +171,9 @@
 			);
 			dependencies = (
 				525763662F4485F5003D4C4E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A1B2C3042F450001003D4C4E /* PinGuardExampleUITests */,
 			);
 			name = PinGuardExampleUITests;
 			packageProductDependencies = (
@@ -194,6 +218,9 @@
 			productRefGroup = 525763452F4485F4003D4C4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
+			packageReferences = (
+				A1B2C3052F450001003D4C4E /* XCRemoteSwiftPackageReference "pinguard-ios" */,
+			);
 			targets = (
 				525763432F4485F4003D4C4E /* PinGuardExample */,
 				525763592F4485F5003D4C4E /* PinGuardExampleTests */,
@@ -279,7 +306,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
@@ -319,7 +345,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
@@ -550,6 +575,25 @@
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A1B2C3052F450001003D4C4E /* XCRemoteSwiftPackageReference "pinguard-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pinguard/pinguard-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A1B2C3022F450001003D4C4E /* PinGuard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1B2C3052F450001003D4C4E /* XCRemoteSwiftPackageReference "pinguard-ios" */;
+			productName = PinGuard;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCConfigurationList section */
 		5257633F2F4485F4003D4C4E /* Build configuration list for PBXProject "PinGuardExample" */ = {
